@@ -48,5 +48,16 @@ x = np.linspace(0, 1, nx)
 y = np.linspace(0, 1, ny)  # generating the location
 xv, yv = np.meshgrid(x, y) # of the node in the meshgrid
 
-#read array from txt file
-arr9=np.loadtxt(r'./.../filename.txt',skiprows=num)
+# read array from txt file
+# arr9=np.loadtxt(r'./.../filename.txt',skiprows=num)
+
+# *creating matrix arrays*
+arr10=np.identity(6) 
+# print("arr10 is: \n",arr10) 
+# print("Shape of arr10 is: \n", arr10.shape) # (6，6)
+# print("element type is: \n", arr10.dtype) #float64
+
+arr11=np.eye(6)
+# print("arr11 is: \n",arr11) 
+# print("Shape of arr11 is: \n", arr11.shape) # (6，6)
+# print("element type is: \n", arr11.dtype) #float64
